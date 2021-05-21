@@ -14,8 +14,8 @@
 &emsp;http://localhost:3000  
 7.mysqlの疎通確認  
 &emsp;mysqlのコンテナ名を確認  
-&emsp;docker ps  
+&emsp;&emsp;docker ps  
 &emsp;mysqlのコンテナに接続  
-&emsp;docker exec -it mysqlのコンテナ名 bash  
+&emsp;&emsp;docker exec -it mysqlのコンテナ名 bash  
 &emsp;ログイン（パスワードはdocker-compose.ymlの環境変数MYSQL_ROOT_PASSWORDに記載）  
-&emsp;mysql -u root -p  
+&emsp;&emsp;mysql -u root -p  
