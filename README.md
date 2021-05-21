@@ -1,4 +1,4 @@
-# 開発環境の作成h1
+# 開発環境の作成h3
 1.プロジェクトが格納されているディレクトリに移動
 2.mysqlのイメージをdocker hubより取得
 docker pull mysql:latest
