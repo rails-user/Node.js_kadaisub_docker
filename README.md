@@ -1,7 +1,7 @@
 ### 開発環境の作成
 1.プロジェクトが格納されているディレクトリに移動  
 2.mysqlのイメージをdocker hubより取得  
-  docker pull mysql:latest  
+&nbsp;docker pull mysql:latest  
 3.expressをインストールする  
  cd backend_node  
  npm install express --save-dev  
