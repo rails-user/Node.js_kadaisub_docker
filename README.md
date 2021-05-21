@@ -1,10 +1,10 @@
 ### 開発環境の作成
-1.プロジェクトが格納されているディレクトリに移動
-2.mysqlのイメージをdocker hubより取得
-docker pull mysql:latest
-3.expressをインストールする
-cd backend_node
-npm install express --save-dev
+1.プロジェクトが格納されているディレクトリに移動<br>
+2.mysqlのイメージをdocker hubより取得<br>
+docker pull mysql:latest<br>
+3.expressをインストールする<br>
+cd backend_node<br>
+npm install express --save-dev<br>
 4.dockerイメージの作成
 docker-compose build
 5.コンテナの生成
