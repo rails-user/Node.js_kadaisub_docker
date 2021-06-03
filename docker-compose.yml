@@ -1,0 +1,29 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db_name'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - my-db:/var/lib/mysql
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-js
+    volumes:
+      - ./backend_node:/backend_node
+    ports:
+      - 3000:3000
+    working_dir: "/backend_node"    
+    command:
+          sh -c 'npm i && nodemon'
+volumes:
+  my-db:
+   driver: local

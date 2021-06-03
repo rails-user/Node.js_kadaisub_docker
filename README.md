@@ -18,4 +18,4 @@
 &emsp;mysqlのコンテナに接続  
 &emsp;&emsp;docker exec -it mysqlのコンテナ名 bash  
 &emsp;ログイン（パスワードはdocker-compose.ymlの環境変数MYSQL_ROOT_PASSWORDに記載）  
-&emsp;&emsp;mysql -u root -p  
+&emsp;&emsp;mysql -u root -p
